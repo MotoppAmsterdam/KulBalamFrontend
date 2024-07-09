@@ -1,0 +1,142 @@
+:root{
+  --color-1:#352473;
+  --color-2:#724fc3; 
+  --color-3:#d90d6c;
+}
+
+@font-face {
+  font-family: "Logo";
+  src: url("/src/fonts/eras.TTF") format("truetype");
+}
+
+.welcome2 {
+  margin-bottom: 10px;
+  color: #352473;
+  font-size: 40px;
+  text-align: center;
+  font-family: "Logo", sans-serif;
+  padding: 0px;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.control-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color: var(--color-1);
+  font-size: 24px;
+  font-family: "Logo", sans-serif;
+  justify-content: center;
+  align-items: flex;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color: #352473;
+  font-size: 24px;
+  font-family: "Logo", sans-serif;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.control label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.signUpImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
+}
+
+.signUpImg img {
+  max-width: 100%; /* Ensures the image doesn't exceed its container */
+  height: auto; /* Allows the image to scale proportionally */
+}
+
+#confirm-password {
+  width: 300px;
+}
+
+#e-mail, #supassword, #confirm-password, #first-name, #last-name, #user-name {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+  color: black;
+}
+
+#e-mail:hover, #supassword:hover, #confirm-password:hover, #first-name:hover, #last-name:hover, #user-name:hover {
+  border-color:#d90d6c
+}
+
+#firstnametag {
+  padding-top: 20px;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.agree-text {
+  color: var(--color-2);
+  font-size: 20px;
+  font-family: "Logo", sans-serif;
+  margin-bottom: 5px;
+}
+
+.agree-checkbox {
+  transform: scale(1.3);
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.button {
+  background-color: #352473;
+  margin: 10px;
+  font-family: "Logo", sans-serif;
+  color: #fafafa;
+}
+
+.button:hover {
+  background-color: #724fc3;
+  border: var(--color-3) 2px solid;
+}
+
+.button-flat {
+  background-color: #352473;
+  margin: 10px;
+  font-family: "Logo", sans-serif;
+  color: #fafafa;
+}
+
+.button-flat:hover {
+  background-color: #724fc3;
+  border: var(--color-3) 2px solid;
+}
+
+.error-message {
+  font-family: "Logo";
+  color: var(--color-3);
+}
+
+#sell-tooltip .MuiTooltip-tooltip {
+  font-size: 18px;
+}

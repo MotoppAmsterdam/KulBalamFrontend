@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Logo";
+  src: url("/src/fonts/eras.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Slogan";
+  src: url("/src/fonts/mystical.TTF") format("truetype");
+}
+
+
+/* Base colors */
+:root {
+  --color-1: #352473; /* Purple */
+  --color-2: #724fc3; /* Lighter purple */
+  --color-3: #d90d6c; /* Pink */
+}
+
+
+.dialog[open] {
+  background-color: #ff0000;
+}
+
+/* Dialog Title */
+#create-post-text {
+  font-size: 24px;
+  font-family: "Slogan", sans-serif;
+  color: var(--color-1);
+}
+
+/* Post Textarea */
+.post-textarea {
+  background-color: transparent;
+  color: black;
+  min-height: 200px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 2px solid var(--color-1);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+/* Error message */
+.error-message {
+  color: #ff0000; /* Red color */
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Loading message */
+.loading-message {
+  font-style: italic;
+}
+
+/* Dialog Buttons Container */
+.dialog-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Dialog Buttons */
+#dialog-btn {
+  color: var(--color-1);
+  margin-left: 10px;
+}
+
+#dialog-btn:hover {
+  background-color: var(--color-2);
+  color: white;
+}
+
+/* Modal styles */
+.MuiDialog-paper {
+  width: 100%;
+  padding: 20px;
+}
+
+.image-input {
+  width: 500px;
+}
+

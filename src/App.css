@@ -1,0 +1,226 @@
+:root{
+  --color-1:#352473;
+  --color-2:#724fc3; 
+  --color-3:#d90d6c;
+}
+
+@font-face {
+  font-family: "Slogan";
+  src: url("/src/fonts/mystical.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Logo";
+  src: url("/src/fonts/eras.TTF") format("truetype");
+}
+
+* {
+  margin: 0px;
+}
+
+.app {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the app takes up at least the height of the viewport */
+}
+
+.app_posts {
+  padding: 20px;
+  flex: 1; /* Make the posts section flexible to take up remaining space */
+}
+
+.app_header_container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.app_header {
+  display: flex;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  object-fit: contain;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.app_header_left {
+  margin-right: auto;
+}
+
+.app_header_center {
+  margin: 0 auto;
+}
+
+.app_header_right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.app_header_image {
+  object-fit: contain;
+  width: 200px;
+  background-color: #ffff;
+  margin-left: auto;
+}
+
+.balam_header {
+  object-fit: contain;
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header_button, .balam_button {
+  background-color: #ffff;
+  padding: 5;
+}
+
+.header_button:hover, .balam_button:hover {
+  border:var(--color-3) 2px solid;
+}
+
+.register {
+  background-color:  #352473;
+  margin: 10px;
+  font-family: "Logo", sans-serif;
+  color:#fafafa;
+}
+
+.register:hover {
+  border: var(--color-3) 2px solid;
+  background-color: #724FC3;
+}
+
+.create_post_button {
+  margin-bottom: 20px;
+  background-color: var(--color-1);
+  margin-left: 20px;
+}
+
+.create_post_button:hover {
+  border: var(--color-3) 2px solid;
+  background-color: #724FC3;
+}
+
+.footer {
+  background-color: #352473;
+  color: #fafafa;
+  padding: 24px;
+  text-align: center;
+  margin-top: auto; /* Pushes the footer to the bottom of the page */
+  font-family: "Logo", sans-serif;
+}
+
+.footer nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.footer a {
+  color: #fff;
+  margin: 0 40px; /* Add spacing between links */
+  
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #D90D6C;
+}
+
+.footerImgLeft {
+  width: 50px;
+  margin-right: auto; /* Add margin to the right of the image */
+}
+
+.footerImgRight {
+  width: 50px;
+  margin-left: auto; /* Add margin to the right of the image */
+}
+
+.copy {
+  font-size: small;
+}
+
+.welcome-container {
+  text-align: center;
+}
+
+.images-welcome {
+  display: flex;
+  justify-content: center;
+}
+
+.images-welcome img {
+  max-width: 20%;
+  height: auto;
+}
+
+.profile_button {
+  background-color: #352473;
+  margin-right: 10px;
+  font-family: "Logo", sans-serif;
+  color: #fafafa;
+  font-size: 17px;
+}
+
+#chat_button {
+  background-color: transparent;
+  font-family: "Logo", sans-serif;
+  color: var(--color-1);
+  font-size: 38px;
+  border: transparent;
+  margin-right: 15px;
+}
+
+#chat_button:hover {
+  color: var(--color-2);
+}
+
+
+.app_posts {
+  display: flex;
+}
+
+.sidebar {
+  height: 40px;
+}
+
+.bi-person-video2 {
+  color: #352473;
+  font-size: xxx-large;
+}
+
+.post_container {
+  flex: 1;
+  padding: 0 20px; /* Adjust padding as needed */
+}
+
+.create_posts {
+  background-color: var(--color-1);
+  color: white;
+  width: 60px;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: right;
+
+}
+
+#create-post-icon{
+  display: flex;
+  font-size: xx-large;
+  margin-top: 20px;
+  color: var(--color-1);
+}
+
+
+#all_users {
+  display: flex;
+  font-size: xxx-large;
+  color: #352473;
+}

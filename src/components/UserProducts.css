@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Logo";
+    src: url("/src/fonts/eras.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Lucida";
+    src: url("/src/fonts/lucida.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Slogan";
+    src: url("/src/fonts/mystical.TTF") format("truetype");
+}
+
+
+.myshop-container {
+    height: 50%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.myshop-title {
+    font-family: 'Slogan';
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: var(--color-2);
+    text-align: center;
+}
+
+.myproducts-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.myproduct-line {
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    margin-left: 2.3%;
+}
+
+.myproduct-line:hover {
+    transform: scale(1.05);
+}
+
+.myproduct-image-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.myproduct-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+    width: 28%;
+}
+
+.myproduct-image {
+    max-width: 95%;
+    object-fit: contain;
+    border-radius: 5%;
+    max-block-size: -webkit-fill-available;
+}
+
+.myproduct-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.myproduct-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 10px;
+}
+
+.myproduct-labels {
+    flex: 0 0 210px;
+}
+
+.myproduct-label {
+    font-size: 28px;
+    line-height: 1.6;
+    color: var(--color-2);
+    font-weight: bold;
+    font-family: 'Logo';
+    text-transform: capitalize;
+}
+
+.myproduct-text {
+    font-size: 25px;
+    line-height: 1.6;
+    color: rgb(114, 114, 114);
+    font-weight: bold;
+    font-family: 'Arial';
+    text-transform: capitalize;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    gap: 5px;
+    max-width: 15rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

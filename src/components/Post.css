@@ -1,0 +1,185 @@
+
+@font-face {
+  font-family: "Logo";
+  src: url("/src/fonts/eras.TTF") format("truetype");
+}
+
+.post {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .post_content {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #1c1e21;
+  }
+  
+  .post_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+  }
+  
+  .post_avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .post_username {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-1);
+    font-family: 'Logo';
+  }
+  
+  .post_timestamp {
+    font-size: 14px;
+    color: #65676b;
+    margin-left: auto;
+  }
+  
+  .post_body {
+    margin-bottom: 10px;
+  }
+  
+  .post_image {
+    display: block; /* Make the image a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    width: 30%; /* Adjust the width of the image */
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .post_actions {
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: auto;
+  }
+
+  .post_reactions {
+    background-color: transparent;
+  }
+
+  .post_reactions:hover{
+    border: transparent;
+    transform: scale(2);
+  }
+  
+  .button-comment {
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-1);
+    font-family: 'Logo';
+  }
+  
+  .likeImg {
+    width: 30px; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+  }
+  
+  .loveImg {
+    width: 30px; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+  }
+
+  /* Post.css */
+
+/* Post comments */
+.post_comments {
+  margin-top: 10px;
+  color: var(--color-2);
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-family: 'Logo';
+}
+
+.comment-text {
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 10px;
+color: black;
+}
+
+.post_comments p {
+  margin-bottom: 5px;
+}
+
+.post_comments p strong {
+  font-weight: bold;
+}
+
+.post_button{
+  height: 40px;
+  margin-left: 20px;
+  background-color: var(--color-1);
+  color: white;
+  font-family: 'Logo';
+}
+
+.post_button:hover {
+  background-color: var(--color-2);
+}
+
+.post_button:disabled {
+  background-color: transparent;
+  color: transparent;
+  border: transparent;
+  cursor: auto;
+}
+
+
+.post-actions-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  width: 20px;
+  height: 20px;
+}
+
+.post_commentbox{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.delete_post {
+  background-color: transparent;
+  float: right;
+  font-family: "Logo", sans-serif;
+  margin-left: auto;
+  border-radius: 100%;
+  width: 70px;
+  height: 65px;
+}
+
+.delete_post:hover {
+  background-color: transparent;
+  border: none;
+  transform: scale(1.3);
+}
+
+#trash-post-icon {
+  color: var(--color-1);
+  font-size: 30px;
+}
+
+#trash-post-icon:hover {
+  color: var(--color-2);
+  font-size: 30px;
+}
